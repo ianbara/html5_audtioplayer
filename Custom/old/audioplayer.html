@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+		<title>HTML Audio Player</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/audioplayer.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900,400italic,700italic" rel="stylesheet">
+</head>
+
+
+<body>
+      <div class="audio-player">
+		<div id="play-btn"></div>
+		<div class="audio-wrapper" id="player-container" href="javascript:;">
+		  <audio id="player" ontimeupdate="initProgressBar()">
+				  <source src="music/song1.mp3" type="audio/mp3">
+				</audio>
+		</div>
+		<div class="player-controls scrubber">
+		  <p>Oslo <small>by</small> Holy Esque</p>
+		  <span id="seekObjContainer">
+				  <progress id="seekObj" value="0" max="1"></progress>
+				</span>
+		  <br>
+		  <small style="float: left; position: relative; left: 15px;" class="start-time"></small>
+		  <small style="float: right; position: relative; right: 20px;" class="end-time"></small>
+
+		</div>
+		<div class="album-image" style="background-image: url('https://artwork-cdn.7static.com/static/img/sleeveart/00/051/614/0005161476_350.jpg')"></div>
+	  </div>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				<!-- Latest compiled and minified JavaScript -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="js/audioplayer.js"></script>
+</body>
+</html>
