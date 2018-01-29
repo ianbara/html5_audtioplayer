@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Audio Player</title>
+    <link rel="stylesheet" type="text/css" href="css/audioplayer.css">
+</head>
+
+
+<body>
+    <audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </audio>
+
+
+    <div> 
+      <button onclick="document.getElementById('audioPlayer').play()">Play</button> 
+      <button onclick="document.getElementById('audioPlayer').pause()">Pause</button> 
+      <button onclick="document.getElementById('audioPlayer').volume += 0.1">Vol+ </button> 
+      <button onclick="document.getElementById('audioPlayer').volume -= 0.1">Vol- </button> 
+    </div>
+
+
+    <ul id="playlist">
+        <li class="current-song"><a href="music/song1.mp3">Song 1</a></li>
+        <li><a href="music/song2.mp3">Song 2</a></li>
+        <li><a href="music/song3.mp3">Song 3</a></li>
+    </ul>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/audioplayer.js"></script>
+    <script>audioPlayer();</script>
+</body>
+</html>
