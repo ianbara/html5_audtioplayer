@@ -16,7 +16,7 @@ function initProgressBar() {
   progressbar.addEventListener("click", seek);
 
   if (player.currentTime == player.duration) {
-    document.getElementById('play-btn').className = "";
+   //document.getElementById('play-btn').className = "";
   }
 
   function seek(event) {
@@ -31,6 +31,7 @@ function initPlayers(num) {
   for (var i = 0; i < num; i++) {
     (function() {
 
+      
       // Variables
       // ----------------------------------------------------------
       // audio embed object

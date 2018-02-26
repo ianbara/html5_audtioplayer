@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+		
+  </head>
+  <body>
+
+   <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Cover</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+							<a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+						<div class="inner">
+								<div class="audio-wrapper">
+
+								<audio id="player" ontimeupdate="initProgressBar()">
+										<source src="music/song1.mp3" type="audio/mp3">
+										<source src="music/song2.mp3" type="audio/mp3">
+										<source src="music/song3.mp3" type="audio/mp3">
+								</audio>
+
+								<div class="controls-container player-controls">
+									<div id="start-time" class="time-text">0:00</div>
+									<div class="controls-center-container">
+											<div class="btn-prev"></div>
+											<div id="play-btn" class="btn-play"></div>
+											<div class="btn-next"></div>
+											<div class="btn-volume">
+											</div>
+										
+											<!-- <div id="volume" class="volume-container">
+													<i class="fa fa-volume-down"></i>
+													<div id="volume"></div>
+													<i class="fa fa-volume-up"></i>
+											</div> -->
+									</div>
+									<input type="range"/>
+									<div id="end-time" class="time-text">3:10</div>
+								</div>
+								<div  id="seek-obj-container" class="timeline-container scrubber">
+										<progress id="seek-obj" value="0" max="1"></progress>
+								</div>
+							</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+		</div>
+		
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="js/audio-player.js"></script>
+  </body>
+</html>
